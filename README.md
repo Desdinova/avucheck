@@ -1,5 +1,5 @@
 # avucheck
-avucheck.py is a program that gathers monitoring (status, values) information from a html website. These values are extracted with BeautifulSoup and converted to a InfluxDB string. The programm is triggered by the input.exec module of Telegraf. The data is later used for visualization and alerting in Grafana.
+avucheck.py is a program that gathers monitoring information (status, values) from a html website. These values are extracted with BeautifulSoup and converted to a InfluxDB string. The programm is triggered by the input.exec module of Telegraf. The data is later used for visualization and alerting in Grafana.
 
 Preparatory work:
 	
@@ -7,7 +7,7 @@ Preparatory work:
 	sudo apt install python3-pip python3-bs4
 	sudo pip3 install requests
 	
-	Be sure to give the user "telegraf" the rights to use this script. You can place the script in /home/telegraf/avucheck and chmod telegraf:telegraf avucheck.py
+Be sure to give the user "telegraf" the rights to use this script. You can place the script in /home/telegraf/avucheck and chmod telegraf:telegraf avucheck.py
 
 Telegraf configuration:
 
