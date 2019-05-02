@@ -2,5 +2,5 @@
 
 import time
 
-print("weather,location=us-midwest,season=summer temperature=82 1465839830100400200")
+print("weather,location=us-midwest,season=summer temperature=82")
 
