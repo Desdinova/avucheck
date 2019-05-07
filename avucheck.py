@@ -33,22 +33,14 @@ def getProcessCounters(htmlTitle):
 	maxError = max(counterList)
 	print("EDI,query=" + url + ",tag=" + htmlTitle + " " + htmlTitle + "=" + str(maxError))
 
-
-# process.started (true, false)
-countTrueFalse("process.started")
-
-
-# process.alert
-countTrueFalse("process.alert")
-
-
-# trigger.alert
-countTrueFalse("trigger.alert")
-
-
-#  process.count.error
-getProcessCounters("process.count.error")
-
-
-# process.count.ongoing
-getProcessCounters("process.count.ongoing")
+if getXml.ok == True:
+	# process.started (true, false)
+	countTrueFalse("process.started")
+	# process.alert
+	countTrueFalse("process.alert")
+	# trigger.alert
+	countTrueFalse("trigger.alert")
+	#  process.count.error
+	getProcessCounters("process.count.error")
+	# process.count.ongoing
+	getProcessCounters("process.count.ongoing")

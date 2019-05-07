@@ -6,6 +6,10 @@ import requests
 
 getXml = requests.get("http://212.89.102.251:8180/monitor/")
 avuXml = getXml.text
+print(getXml)
+
+if getXml.ok == True:
+	print("OK")
 
 soup = BeautifulSoup(avuXml, "lxml")
 
